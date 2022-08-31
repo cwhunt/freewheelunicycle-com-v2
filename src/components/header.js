@@ -3,8 +3,8 @@ import { graphql, Link, useStaticQuery } from 'gatsby'
 import { globalHistory, useLocation } from '@reach/router'
 import cx from 'classnames'
 
-import HygraphLogo from '../svg/logo.svg'
-import HygraphMark from '../svg/mark.svg'
+import Logo from '../svg/logo.svg'
+import Mark from '../svg/mark.svg'
 import Transition from './transition'
 
 function Header() {
@@ -37,9 +37,9 @@ function Header() {
       <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
         <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
           <div className="flex items-center justify-between w-full md:w-auto">
-            <Link to="/" aria-label="Hygraph Gatsby Blog Starter">
-              <HygraphLogo className="hidden sm:block h-10" />
-              <HygraphMark className="h-10 sm:hidden" />
+            <Link to="/" aria-label="Freewheel Unicycle">
+              <Logo className="hidden sm:block h-10" />Freewheel Unicycle
+              <Mark className="h-10 sm:hidden" />
             </Link>
             <div className="-mr-2 flex items-center md:hidden">
               <button
@@ -108,7 +108,7 @@ function Header() {
             >
               <div className="px-2 pt-8 flex items-center justify-between">
                 <div>
-                  <HygraphMark className="h-10" />
+                  <Mark className="h-10" />
                 </div>
                 <div className="-mr-2">
                   <button

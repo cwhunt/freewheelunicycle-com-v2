@@ -9,7 +9,7 @@ function IndexPage({ data: { allGraphCmsPost } }) {
           Latest
         </h1>
         <p className="text-lg leading-7 text-gray-500">
-          Our latest blog posts.
+          My latest blog posts.
         </p>
       </div>
 

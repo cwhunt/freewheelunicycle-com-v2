@@ -2,10 +2,10 @@ require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
-    title: 'Hygraph Blog',
+    title: 'Freewheel Unicycle',
     description:
-      'Gatsby blog starter for Hygraph! Powered by `gatsby-source-hygraph`, featuring `gatsby-image` and MDX!',
-    keywords: 'Headless CMS, Hygraph, GraphQL CMS, Gatsby',
+      'Thoughts on and experiences with juggling and unicycling.',
+    keywords: 'unicycle, unicycling, freewheel unicycle, juggling, unicycle basketball',
   },
   plugins: [
     'gatsby-plugin-mdx',
@@ -29,6 +29,15 @@ module.exports = {
         downloadLocalImages: true,
         fragmentsPath: 'hygraph-fragments',
       },
+    },
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: ['G-PR2D4QCF7G'],
+        pluginConfig: {
+          head: true
+        }
+      }
     },
     'gatsby-transformer-sharp',
   ],

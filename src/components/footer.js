@@ -1,30 +1,18 @@
 import React from 'react'
 
 import GitHubSVG from '../svg/github.svg'
-import LinkedInSVG from '../svg/linkedin.svg'
-import SlackSVG from '../svg/slack.svg'
-import TwitterSVG from '../svg/twitter.svg'
+import YouTubeSVG from '../svg/youtube.svg'
 
 const socialLinks = [
   {
     Component: GitHubSVG,
-    href: 'https://github.com/hygraph/gatsby-hygraph-ecommerce-starter',
+    href: 'https://github.com/cwhunt',
     title: 'GitHub',
   },
   {
-    Component: SlackSVG,
-    href: 'http://slack.hygraph.com',
-    title: 'Slack',
-  },
-  {
-    Component: TwitterSVG,
-    href: 'https://twitter.com/hygraphcom',
-    title: 'Twitter',
-  },
-  {
-    Component: LinkedInSVG,
-    href: 'https://www.linkedin.com/company/hygraph',
-    title: 'LinkedIn',
+    Component: YouTubeSVG,
+    href: 'https://www.youtube.com/channel/UCJBBptvGpB6DpR8Y50Ijing',
+    title: 'YouTube',
   },
 ]
 
@@ -32,7 +20,7 @@ function Footer() {
   return (
     <footer className="bg-gray-800">
       <div className="flex flex-col md:flex-row items-center md:justify-between py-6 max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-5xl space-y-6 md:space-y-0">
-        <p className="text-gray-300">Powered by Hygraph &amp; Gatsby</p>
+        <p className="text-gray-300"></p>
         <ul className="inline-flex space-x-6">
           {socialLinks.map(({ Component, href, title }, index) => (
             <li key={index}>
