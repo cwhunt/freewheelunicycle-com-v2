@@ -27,10 +27,10 @@ function BlogPostTemplate({
         </div>
       </header>
       <div
-        className="divide-y lg:divide-y-0 divide-gray-200 lg:grid lg:grid-cols-4 lg:col-gap-6 pb-16 lg:pb-20"
+        className="divide-y lg:divide-y-0 divide-gray-200 lg:grid lg:grid-cols-1 lg:col-gap-6 pb-16 lg:pb-20"
         style={{ gridTemplateRows: 'auto 1fr' }}
       >
-        <dl className="pt-6 pb-10 lg:pt-11 lg:border-b lg:border-gray-200">
+        {/* <dl className="pt-6 pb-10 lg:pt-11 lg:border-b lg:border-gray-200">
           <dt className="sr-only">Author</dt>
           <dd>
             <ul className="flex justify-center lg:block space-x-8 sm:space-x-12 lg:space-x-0 lg:space-y-8">
@@ -53,8 +53,13 @@ function BlogPostTemplate({
               </li>
             </ul>
           </dd>
-        </dl>
+        </dl> */}
         <div className="divide-y divide-gray-200 lg:pb-0 lg:col-span-3 lg:row-span-2">
+        <div className="pt-8">
+            <Link to="/" className="text-purple-500 hover:text-purple-600">
+              &larr; Back to the blog
+            </Link>
+          </div>
           {coverImage && (
             <Img
               fluid={coverImage.localFile.childImageSharp.fluid}
@@ -93,11 +98,6 @@ function BlogPostTemplate({
               )}
             </div>
           )}
-          <div className="pt-8">
-            <Link to="/" className="text-purple-500 hover:text-purple-600">
-              &larr; Back to the blog
-            </Link>
-          </div>
         </footer>
       </div>
     </article>

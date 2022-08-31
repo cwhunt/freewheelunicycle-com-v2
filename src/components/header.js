@@ -3,7 +3,7 @@ import { graphql, Link, useStaticQuery } from 'gatsby'
 import { globalHistory, useLocation } from '@reach/router'
 import cx from 'classnames'
 
-import Logo from '../svg/logo.svg'
+import Logo from '../gif/logo.gif'
 import Mark from '../svg/mark.svg'
 import Transition from './transition'
 
@@ -38,8 +38,9 @@ function Header() {
         <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
           <div className="flex items-center justify-between w-full md:w-auto">
             <Link to="/" aria-label="Freewheel Unicycle">
-              <Logo className="hidden sm:block h-10" />Freewheel Unicycle
-              <Mark className="h-10 sm:hidden" />
+              {/* <Logo className="hidden sm:block h-10" /> */}
+              <img src={Logo} alt="Carl Hunt, Freewheel Unicyclist" />
+              {/* <Mark className="h-10 sm:hidden" /> */}
             </Link>
             <div className="-mr-2 flex items-center md:hidden">
               <button
